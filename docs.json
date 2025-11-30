@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "name": "RAR Help Center Docs",
   "colors": {
     "primary": "#7347f2",
