@@ -1,6 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
+
+ "fonts": {
+    "family": "Inter"
+  },
  
   "name": "RAR Help Center Docs",
   "colors": {
