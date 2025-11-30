@@ -2,21 +2,27 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
 
- "fonts": {
-    "family": "Inter"
-  },
- 
   "name": "RAR Help Center Docs",
+
   "colors": {
     "primary": "#7347f2",
     "light": "#7347f2",
-    "dark": "#7347f2",
-    
-    "surface": "#ffffff",
-    "background": "#efefeb"
+    "dark": "#7347f2"
+  },
+
+  "fonts": {
+    "family": "Inter"
+  },
+
+  "background": {
+    "color": {
+      "light": "#efefeb",
+      "dark": "#050505"
+    }
   },
 
   "favicon": "/favicon-docs.svg",
+
   "navigation": {
     "tabs": [
       {
@@ -97,10 +103,12 @@
       ]
     }
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       {
@@ -114,24 +122,25 @@
       "href": "https://www.rarent.com/account/my-account"
     }
   },
+
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
+
   "footer": {
     "socials": {
       "x": "https://x.com/RARHelps",
       "instagram": "https://instagram.com/rar.rent",
       "website": "https://rarent.com",
-
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
