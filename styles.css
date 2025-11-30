@@ -1,0 +1,41 @@
+/* ====== MAIN SIDEBAR AREA BACKGROUND ====== */
+.sticky-nav,
+.sidebar,
+.sidebar-content {
+  background-color: #efefeb !important;   /* your replacement for gray */
+}
+
+/* ====== SIDEBAR SEARCH BAR ====== */
+.search-container,
+.search-input {
+  background-color: #ffffff !important;   /* white search bar */
+  border: 1px solid #ddd !important;       /* subtle border */
+}
+
+/* ====== SIDEBAR DIVIDER HEADINGS ====== */
+.sidebar-group-header {
+  background-color: #efefeb !important;
+}
+
+/* ====== SIDEBAR ITEMS ====== */
+.sidebar-list-item {
+  background-color: transparent !important;
+}
+
+/* ====== ACTIVE PAGE HIGHLIGHT (purple bubble) ====== */
+.sidebar-list-item-active {
+  background-color: #e7ddff !important;        /* match Almond's purple hue, editable */
+  border-radius: 14px !important;
+}
+
+/* ====== HOVER EFFECT ====== */
+.sidebar-list-item:hover {
+  background-color: rgba(0,0,0,0.04) !important; /* light hover tint, customizable */
+  border-radius: 14px !important;
+}
+
+/* ====== KEEP THE CONTENT PANEL WHITE ====== */
+.mintlify-content,
+.mintlify-content-container {
+  background-color: #ffffff !important;
+}
