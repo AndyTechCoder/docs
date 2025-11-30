@@ -1,37 +1,53 @@
-/* Keep overall page + article area white */
-body {
-  background-color: #efefeb;
+/* ========= LIGHT + DARK SHARED LAYOUT ========= */
+
+/* Page background */
+body,
+[data-theme="dark"] body {
+  background-color: #efefeb !important;
 }
 
 /* Almond layout wrapper */
-[data-mintlify-element="almond-layout"] {
-  background-color: #efefeb;
+[data-mintlify-element="almond-layout"],
+[data-theme="dark"] [data-mintlify-element="almond-layout"] {
+  background-color: #efefeb !important;
 }
 
-/* 🔹 MAIN SIDEBAR BACKGROUND (the gray area you showed) */
+/* 🔹 MAIN SIDEBAR BACKGROUND (gray area) */
 [data-mintlify-element="sidebar"],
 [data-mintlify-element="Sidebar"],
 [data-mintlify-element="sidebar-content"],
-[data-mintlify-element="SidebarContent"] {
-  background-color: #efefeb;       /* <- change to your color */
+[data-mintlify-element="SidebarContent"],
+[data-theme="dark"] [data-mintlify-element="sidebar"],
+[data-theme="dark"] [data-mintlify-element="Sidebar"],
+[data-theme="dark"] [data-mintlify-element="sidebar-content"],
+[data-theme="dark"] [data-mintlify-element="SidebarContent"] {
+  background-color: #efefeb !important;   /* same in light & dark */
 }
 
 /* Section header bars like “Getting started”, “Customization”… */
 [data-mintlify-element="sidebar-group-header"],
 [data-mintlify-element="SidebarGroupHeader"],
 [data-mintlify-element="sidebar-nav-group-divider"],
-[data-mintlify-element="SidebarNavGroupDivider"] {
-  background-color: #e3e0ff;       /* softer strip color */
+[data-mintlify-element="SidebarNavGroupDivider"],
+[data-theme="dark"] [data-mintlify-element="sidebar-group-header"],
+[data-theme="dark"] [data-mintlify-element="SidebarGroupHeader"],
+[data-theme="dark"] [data-mintlify-element="sidebar-nav-group-divider"],
+[data-theme="dark"] [data-mintlify-element="SidebarNavGroupDivider"] {
+  background-color: #e3e0ff !important;
 }
 
-/* Active item pill can stay as Mintlify’s lavender, or tweak here */
+/* Active item pill */
 [data-mintlify-element="nav-tag-pill"],
-[data-mintlify-element="NavTagPill"] {
-  background-color: #ede4ff;
+[data-mintlify-element="NavTagPill"],
+[data-theme="dark"] [data-mintlify-element="nav-tag-pill"],
+[data-theme="dark"] [data-mintlify-element="NavTagPill"] {
+  background-color: #ede4ff !important;
 }
 
 /* Sidebar search box so it still looks like a card */
 [data-mintlify-element="search-bar-entry"],
-[data-mintlify-element="SearchBarEntry"] {
-  background-color: #efefeb;
+[data-mintlify-element="SearchBarEntry"],
+[data-theme="dark"] [data-mintlify-element="search-bar-entry"],
+[data-theme="dark"] [data-mintlify-element="SearchBarEntry"] {
+  background-color: #efefeb !important;
 }
