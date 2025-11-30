@@ -51,3 +51,128 @@ body,
 [data-theme="dark"] [data-mintlify-element="SearchBarEntry"] {
   background-color: #efefeb !important;
 }
+
+
+/* =========================
+   RAR LANDING LAYOUT (index.mdx)
+   ========================= */
+
+.rar-landing {
+  max-width: 1200px;
+  margin: 32px auto 48px;
+  padding: 0 24px;
+}
+
+/* HERO WITH PARTIAL BACKGROUND IMAGE */
+.rar-landing-hero {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  padding: 96px 32px 56px;
+  background-color: #ffffff;
+}
+
+/* Background layer: image + subtle gradient.
+   Replace url(...) with your own asset path. */
+.rar-landing-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0% 0%, #e9e3ff 0, transparent 45%),
+    radial-gradient(circle at 100% 0%, #d9f7e9 0, transparent 50%),
+    url("/images/hero-bg.png");
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Content on top of the background */
+.rar-landing-hero-inner {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rar-landing-hero-inner h1 {
+  font-size: 2.75rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rar-landing-hero-inner p {
+  font-size: 1.1rem;
+  color: #3f3f46;
+  margin: 0;
+}
+
+/* CARDS SECTION UNDER HERO */
+.rar-landing-cards {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.rar-landing-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 20px 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rar-landing-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.rar-landing-card p {
+  margin: 0 0 14px;
+  color: #52525b;
+  font-size: 0.95rem;
+}
+
+.rar-landing-card-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7347f2;
+  text-decoration: none;
+}
+
+.rar-landing-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Optional: dark mode tweaks so it doesn't explode */
+[data-theme="dark"] .rar-landing-hero {
+  background-color: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+[data-theme="dark"] .rar-landing-hero-bg {
+  opacity: 0.35;
+}
+
+[data-theme="dark"] .rar-landing-hero-inner p {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .rar-landing-card {
+  background-color: #020617;
+  border-color: #1f2937;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .rar-landing-card p {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .rar-landing-card-link {
+  color: #a78bfa;
+}
