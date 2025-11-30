@@ -1,11 +1,11 @@
 /* Keep overall page + article area white */
 body {
-  background-color: #ffffff;
+  background-color: #efefeb;
 }
 
 /* Almond layout wrapper */
 [data-mintlify-element="almond-layout"] {
-  background-color: #ffffff;
+  background-color: #efefeb;
 }
 
 /* 🔹 MAIN SIDEBAR BACKGROUND (the gray area you showed) */
@@ -33,5 +33,5 @@ body {
 /* Sidebar search box so it still looks like a card */
 [data-mintlify-element="search-bar-entry"],
 [data-mintlify-element="SearchBarEntry"] {
-  background-color: #ffffff;
+  background-color: #efefeb;
 }
