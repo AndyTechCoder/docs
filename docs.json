@@ -85,11 +85,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Holiday Shopping Hub",
-          "href": "https://help.rarent.com",
-          "icon": "gifts"
-        },
-        {
           "anchor": "Documentation",
           "href": "https://help.rarent.com",
           "icon": "book-open-cover"
