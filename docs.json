@@ -23,6 +23,11 @@
         "tab": "Guides",
         "groups": [
           {
+            "group": "Holiday Shopping Guide",
+            "pages": [
+              "Holiday-Shopping"            ]
+          },
+          {
             "group": "Getting started",
             "pages": [
               "index",
