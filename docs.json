@@ -105,6 +105,15 @@
             }
           ]
         }
+      },
+      {
+        "language": "es",
+        "products": [
+          {
+            "product": "RAR",
+            "href": "es/rar"
+          }
+        ]
       }
     ]
   },
