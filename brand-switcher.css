@@ -1,0 +1,98 @@
+/* Adds image-backed brand marks to the native Mintlify product switcher. */
+:root {
+  --brand-logo-rar: url('/assets/brand-logos/rar.svg');
+  --brand-logo-you: url('/assets/brand-logos/you.svg');
+  --brand-logo-market: url('/assets/brand-logos/market.svg');
+  --brand-logo-casa: url('/assets/brand-logos/casa.svg');
+  --brand-logo-pludo: url('/assets/brand-logos/pludo.svg');
+  --brand-logo-polar: url('/assets/brand-logos/polar.svg');
+  --brand-logo-buildit: url('/assets/brand-logos/buildit.svg');
+}
+
+.nav-dropdown-products-selector-trigger {
+  position: relative;
+  padding-left: 3rem !important;
+}
+
+.nav-dropdown-products-selector-trigger::before {
+  content: '';
+  position: absolute;
+  left: 0.875rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 0.45rem;
+  background-image: var(--brand-logo-rar);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.12);
+}
+
+html[data-current-path*='/you/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-you);
+}
+
+html[data-current-path*='/market/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-market);
+}
+
+html[data-current-path*='/casa/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-casa);
+}
+
+html[data-current-path*='/pludo/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-pludo);
+}
+
+html[data-current-path*='/polar/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-polar);
+}
+
+html[data-current-path*='/buildit/'] .nav-dropdown-products-selector-trigger::before {
+  background-image: var(--brand-logo-buildit);
+}
+
+.nav-dropdown-products-selector-content [data-component-part='products-selector-item'] {
+  grid-template-columns: 1.85rem 1fr auto !important;
+  min-height: 2.75rem;
+}
+
+.nav-dropdown-products-selector-content [data-component-part='products-selector-item']::before {
+  content: '';
+  display: block;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 0.45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.12);
+}
+
+.nav-dropdown-products-selector-content a[href*='/rar/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-rar);
+}
+
+.nav-dropdown-products-selector-content a[href*='/you/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-you);
+}
+
+.nav-dropdown-products-selector-content a[href*='/market/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-market);
+}
+
+.nav-dropdown-products-selector-content a[href*='/casa/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-casa);
+}
+
+.nav-dropdown-products-selector-content a[href*='/pludo/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-pludo);
+}
+
+.nav-dropdown-products-selector-content a[href*='/polar/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-polar);
+}
+
+.nav-dropdown-products-selector-content a[href*='/buildit/'] [data-component-part='products-selector-item']::before {
+  background-image: var(--brand-logo-buildit);
+}
