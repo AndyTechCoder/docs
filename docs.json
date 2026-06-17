@@ -21,34 +21,52 @@
     "languages": [
       {
         "language": "en",
-        "tabs": [
+        "products": [
           {
-            "tab": "Guides",
+            "product": "RAR",
             "groups": [
               {
-                "group": "Holiday Shopping Guide",
+                "group": "RAR help",
                 "pages": [
-                  "Holiday-Shopping"
+                  "en/rar/overview",
+                  "en/rar/contact-support"
                 ]
               },
               {
-                "group": "Getting started",
+                "group": "Orders and rentals",
                 "pages": [
+                  "en/rar/orders-rentals/manage-rental",
+                  "en/rar/orders-rentals/delivery",
+                  "en/rar/orders-rentals/returns"
+                ]
+              },
+              {
+                "group": "Account and billing",
+                "pages": [
+                  "en/rar/account-billing/account-access",
+                  "en/rar/account-billing/payments-invoices"
+                ]
+              },
+              {
+                "group": "Support operations",
+                "pages": [
+                  "en/rar/support-operations/escalations"
+                ]
+              },
+              {
+                "group": "Existing RAR guides",
+                "pages": [
+                  "Holiday-Shopping",
                   "index",
                   "quickstart",
                   "development"
                 ]
               },
               {
-                "group": "Customization",
+                "group": "Documentation setup",
                 "pages": [
                   "essentials/settings",
-                  "essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
+                  "essentials/navigation",
                   "essentials/markdown",
                   "essentials/code",
                   "essentials/images",
@@ -62,25 +80,87 @@
                   "ai-tools/claude-code",
                   "ai-tools/windsurf"
                 ]
-              }
-            ]
-          },
-          {
-            "tab": "API reference",
-            "groups": [
-              {
-                "group": "API documentation",
-                "pages": [
-                  "api-reference/introduction"
-                ]
               },
               {
-                "group": "Endpoint examples",
+                "group": "API reference",
                 "pages": [
+                  "api-reference/introduction",
                   "api-reference/endpoint/get",
                   "api-reference/endpoint/create",
                   "api-reference/endpoint/delete",
                   "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "You",
+            "groups": [
+              {
+                "group": "You help",
+                "pages": [
+                  "en/you/overview",
+                  "en/you/contact-support"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "Market",
+            "groups": [
+              {
+                "group": "Market help",
+                "pages": [
+                  "en/market/overview",
+                  "en/market/contact-support"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "Casa",
+            "groups": [
+              {
+                "group": "Casa help",
+                "pages": [
+                  "en/casa/overview",
+                  "en/casa/contact-support"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "Pludo",
+            "groups": [
+              {
+                "group": "Pludo help",
+                "pages": [
+                  "en/pludo/overview",
+                  "en/pludo/contact-support"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "Polar",
+            "groups": [
+              {
+                "group": "Polar help",
+                "pages": [
+                  "en/polar/overview",
+                  "en/polar/contact-support"
+                ]
+              }
+            ]
+          },
+          {
+            "product": "BuildIt",
+            "groups": [
+              {
+                "group": "BuildIt help",
+                "pages": [
+                  "en/buildit/overview",
+                  "en/buildit/contact-support"
                 ]
               }
             ]
@@ -111,7 +191,14 @@
         "products": [
           {
             "product": "RAR",
-            "href": "es/rar"
+            "groups": [
+              {
+                "group": "Primeros pasos",
+                "pages": [
+                  "es/rar/descripcion-general"
+                ]
+              }
+            ]
           }
         ]
       }
