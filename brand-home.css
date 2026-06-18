@@ -1,0 +1,270 @@
+/* Reusable brand landing page system. Each brand can override these variables by path or modifier class. */
+:root {
+  --brand-font-rar: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-you: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-market: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-casa: Georgia, "Times New Roman", serif;
+  --brand-font-pludo: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-polar: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --brand-font-buildit: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[data-current-path^="/en/rar"] {
+  --brand-font-active: var(--brand-font-rar);
+}
+
+html[data-current-path^="/en/you"] {
+  --brand-font-active: var(--brand-font-you);
+}
+
+html[data-current-path^="/en/market"] {
+  --brand-font-active: var(--brand-font-market);
+}
+
+html[data-current-path^="/en/casa"] {
+  --brand-font-active: var(--brand-font-casa);
+}
+
+html[data-current-path^="/en/pludo"] {
+  --brand-font-active: var(--brand-font-pludo);
+}
+
+html[data-current-path^="/en/polar"] {
+  --brand-font-active: var(--brand-font-polar);
+}
+
+html[data-current-path^="/en/buildit"] {
+  --brand-font-active: var(--brand-font-buildit);
+}
+
+.brand-home {
+  --brand-home-bg: #fbfaf8;
+  --brand-home-ink: #15141a;
+  --brand-home-muted: #67616f;
+  --brand-home-line: rgba(25, 24, 31, 0.12);
+  --brand-home-panel: rgba(255, 255, 255, 0.92);
+  --brand-home-accent: #7347f2;
+  --brand-home-accent-strong: #5f34dc;
+  --brand-home-accent-soft: rgba(115, 71, 242, 0.12);
+  --brand-home-radius: 18px;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  color: var(--brand-home-ink);
+  font-family: var(--brand-font-active, var(--brand-font-rar));
+}
+
+.brand-home * {
+  box-sizing: border-box;
+}
+
+.brand-home a {
+  text-decoration: none;
+}
+
+.brand-home--rar {
+  --brand-home-accent: #7347f2;
+  --brand-home-accent-strong: #5f34dc;
+  --brand-home-accent-soft: rgba(115, 71, 242, 0.13);
+}
+
+.brand-home__hero {
+  min-height: 360px;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  padding: clamp(44px, 7vw, 88px) clamp(24px, 5vw, 72px);
+  border: 1px solid var(--brand-home-line);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(115, 71, 242, 0.12), rgba(255, 255, 255, 0) 42%),
+    radial-gradient(circle at 85% 18%, rgba(115, 71, 242, 0.2), transparent 28%),
+    var(--brand-home-bg);
+}
+
+.brand-home__eyebrow,
+.brand-home__section-kicker {
+  margin: 0;
+  color: var(--brand-home-accent-strong);
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-home__hero h1 {
+  max-width: 780px;
+  margin: 0;
+  color: var(--brand-home-ink);
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.brand-home__lead {
+  max-width: 680px;
+  margin: 0;
+  color: var(--brand-home-muted);
+  font-size: clamp(1.04rem, 2vw, 1.3rem);
+  line-height: 1.55;
+}
+
+.brand-home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.brand-home__primary,
+.brand-home__secondary {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 18px;
+  font-weight: 720;
+}
+
+.brand-home__primary {
+  color: #fff;
+  background: var(--brand-home-accent);
+  box-shadow: 0 12px 30px rgba(115, 71, 242, 0.25);
+}
+
+.brand-home__secondary {
+  color: var(--brand-home-ink);
+  border: 1px solid var(--brand-home-line);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.brand-home__search-panel,
+.brand-home__collections,
+.brand-home__handoff {
+  margin-top: 24px;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--brand-home-line);
+  border-radius: var(--brand-home-radius);
+  background: var(--brand-home-panel);
+}
+
+.brand-home__search-panel h2,
+.brand-home__collections h2,
+.brand-home__handoff h2 {
+  margin: 6px 0 0;
+  color: var(--brand-home-ink);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  letter-spacing: 0;
+}
+
+.brand-home__quick-grid,
+.brand-home__collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.brand-home__quick-card,
+.brand-home__collection {
+  display: flex;
+  gap: 14px;
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid var(--brand-home-line);
+  border-radius: 14px;
+  color: var(--brand-home-ink);
+  background: #fff;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.brand-home__quick-card:hover,
+.brand-home__collection:hover {
+  border-color: rgba(115, 71, 242, 0.42);
+  box-shadow: 0 18px 44px rgba(23, 20, 35, 0.08);
+  transform: translateY(-1px);
+}
+
+.brand-home__quick-icon,
+.brand-home__collection-mark {
+  flex: 0 0 auto;
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--brand-home-accent-strong);
+  background: var(--brand-home-accent-soft);
+  font-size: 0.78rem;
+  font-weight: 780;
+}
+
+.brand-home__quick-card strong,
+.brand-home__collection strong {
+  display: block;
+  color: var(--brand-home-ink);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.brand-home__quick-card small,
+.brand-home__collection small {
+  display: block;
+  margin-top: 7px;
+  color: var(--brand-home-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.brand-home__collection {
+  flex-direction: column;
+}
+
+.brand-home__collection-mark {
+  width: max-content;
+  min-width: 38px;
+  padding: 0 10px;
+}
+
+.brand-home__handoff {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  background: #15141a;
+  color: #fff;
+}
+
+.brand-home__handoff h2,
+.brand-home__handoff p {
+  color: #fff;
+}
+
+.brand-home__handoff p:not(.brand-home__section-kicker) {
+  max-width: 620px;
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.55;
+}
+
+.brand-home__handoff .brand-home__section-kicker {
+  color: #cbbcff;
+}
+
+@media (max-width: 760px) {
+  .brand-home {
+    width: 100%;
+  }
+
+  .brand-home__quick-grid,
+  .brand-home__collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-home__handoff {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
