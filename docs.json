@@ -205,8 +205,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/rar-help-dark.svg",
+    "dark": "/logo/rar-help-light.svg"
   },
   "navbar": {
     "links": [
