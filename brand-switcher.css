@@ -7,20 +7,26 @@
   --brand-logo-pludo: url('/assets/brand-logos/pludo.svg');
   --brand-logo-polar: url('/assets/brand-logos/polar.svg');
   --brand-logo-buildit: url('/assets/brand-logos/buildit.svg');
+  --brand-switcher-trigger-inset: 0.75rem;
+  --brand-switcher-trigger-logo: 2rem;
 }
 
 .nav-dropdown-products-selector-trigger {
   position: relative;
-  padding-left: 3rem !important;
+  box-sizing: border-box;
+  min-height: calc(var(--brand-switcher-trigger-logo) + (var(--brand-switcher-trigger-inset) * 2));
+  padding-left: calc(var(--brand-switcher-trigger-inset) + var(--brand-switcher-trigger-logo) + 1rem) !important;
 }
 
 .nav-dropdown-products-selector-trigger::before {
   content: '';
   position: absolute;
-  left: 0.875rem;
-  width: 1.45rem;
-  height: 1.45rem;
-  border-radius: 0.45rem;
+  top: 50%;
+  left: var(--brand-switcher-trigger-inset);
+  width: var(--brand-switcher-trigger-logo);
+  height: var(--brand-switcher-trigger-logo);
+  border-radius: 0.55rem;
+  transform: translateY(-50%);
   background-image: var(--brand-logo-rar);
   background-position: center;
   background-repeat: no-repeat;
