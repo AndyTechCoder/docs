@@ -1,0 +1,5 @@
+/* Follow-up override for the Mintlify product selector trigger. */
+.nav-dropdown-products-selector-trigger::before {
+  top: var(--brand-switcher-trigger-inset) !important;
+  transform: none !important;
+}
