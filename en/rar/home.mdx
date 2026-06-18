@@ -1,115 +1,68 @@
 ---
-title: "RAR Help Center"
-description: "Start here for RAR rentals, orders, account help, billing, and support."
+title: "RAR Support"
+description: "Search RAR support and browse RAR products and apps."
 ---
 
 <div className="brand-home brand-home--rar">
-  <section className="brand-home__hero brand-home__hero--rar" aria-labelledby="rar-home-title" style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(320px, 1fr))',alignItems:'stretch',gap:'0px',overflow:'hidden',border:'0px',borderRadius:'34px',backgroundColor:'#efefeb',padding:'0px'}}>
-    <div className="brand-home__copy" style={{display:'flex',minHeight:'390px',flexDirection:'column',justifyContent:'center',border:'0px',borderRadius:'0px',backgroundColor:'#efefeb',padding:'56px'}}>
-      <div className="brand-home__eyebrow">RAR Help Center</div>
+  <section className="rar-support-hero" aria-labelledby="rar-home-title">
+    <div className="rar-support-hero__content">
+      <div className="rar-support-hero__eyebrow">RAR Support</div>
       <h1 id="rar-home-title">How can we help?</h1>
-      <p className="brand-home__lead">Find support for rentals, delivery, returns, billing, account access, and pickup.</p>
-      <button className="brand-home__search-trigger" type="button" aria-label="Open Mintlify search" onClick={() => (document.getElementById('search-bar-entry') || document.getElementById('search-bar-entry-mobile'))?.click()} style={{display:'flex',width:'min(100%, 520px)',height:'36px',minHeight:'36px',alignItems:'center',justifyContent:'space-between',gap:'8px',marginTop:'22px',border:'0 solid #f1f0f5',borderRadius:'12px',padding:'0 12px 0 14px',color:'#737277',background:'#fff',boxShadow:'0 0 0 1px rgba(162, 160, 165, 0.3)',cursor:'pointer',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'14px',fontWeight:400,lineHeight:'24px'}}>
-        <span className="brand-home__search-left" style={{display:'inline-flex',minWidth:0,alignItems:'center',gap:'8px',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif'}}>
-          <span className="brand-home__search-icon" aria-hidden="true" style={{display:'inline-flex',width:'16px',height:'16px',flex:'0 0 auto',alignItems:'center',justifyContent:'center',color:'currentColor'}}>
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{display:'block',width:'16px',height:'16px'}}>
+      <button className="brand-home__search-trigger" type="button" aria-label="Open Mintlify search" onClick={() => (document.getElementById('search-bar-entry') || document.getElementById('search-bar-entry-mobile'))?.click()}>
+        <span className="brand-home__search-left">
+          <span className="brand-home__search-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.25 15.5C12.7018 15.5 15.5 12.7018 15.5 9.25C15.5 5.79822 12.7018 3 9.25 3C5.79822 3 3 5.79822 3 9.25C3 12.7018 5.79822 15.5 9.25 15.5Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M13.75 13.75L17 17" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
-          <span className="brand-home__search-copy" style={{flex:'1 1 auto',minWidth:0,overflow:'hidden',color:'currentColor',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'14px',fontWeight:400,lineHeight:'24px',textAlign:'left',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>Search...</span>
+          <span className="brand-home__search-copy">Search...</span>
         </span>
-        <kbd style={{flex:'0 0 auto',border:0,borderRadius:0,padding:0,color:'#737277',background:'transparent',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'12px',fontWeight:500,lineHeight:'16px'}}>⌘K</kbd>
+        <kbd>⌘K</kbd>
       </button>
-      <div className="brand-home__actions" aria-label="Primary help paths">
-        <a className="brand-home__primary" href="/en/rar/orders-rentals/manage-rental">Manage a rental</a>
-        <a className="brand-home__secondary" href="/en/rar/contact-support">Contact support</a>
+    </div>
+    <div className="rar-support-hero__media" aria-label="RAR featured images">
+      <div className="rar-support-hero__images">
+        <div className="rar-support-hero__image rar-support-hero__image--small" role="img" aria-label="RAR product preview" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_fa88c27aeee1474c8f36fe4e93f34b30~mv2.jpg/v1/crop/x_261,y_0,w_1397,h_1080/fill/w_546,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/65d752ab1a2073825be9ee98_vc3.jpg)'}} />
+        <div className="rar-support-hero__image" role="img" aria-label="RAR support feature" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_cec37eda58dd42debbb1454071abbc04~mv2.png/v1/fill/w_720,h_403,al_c,lg_1,q_85,enc_avif,quality_auto/8e4fea_cec37eda58dd42debbb1454071abbc04~mv2.png)'}} />
+        <div className="rar-support-hero__image rar-support-hero__image--small" role="img" aria-label="RAR rental preview" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_52055680f3e44e87a8aa4ffde3e2e260~mv2.png/v1/crop/x_596,y_0,w_1303,h_1404/fill/w_568,h_612,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image.png)'}} />
       </div>
     </div>
-    <div className="brand-home__hero-image" role="img" aria-label="RAR business support" style={{minHeight:'390px',borderRadius:'0px',backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_cec37eda58dd42debbb1454071abbc04~mv2.png/v1/fill/w_720,h_403,al_c,lg_1,q_85,enc_avif,quality_auto/8e4fea_cec37eda58dd42debbb1454071abbc04~mv2.png)',backgroundSize:'cover',backgroundPosition:'center',boxShadow:'none'}} />
   </section>
 
-  <nav className="brand-home__topic-strip" aria-label="Popular RAR help categories">
-    <a href="/en/rar/orders-rentals/manage-rental">Orders</a>
-    <a href="/en/rar/orders-rentals/delivery">Delivery</a>
-    <a href="/en/rar/orders-rentals/returns">Returns</a>
-    <a href="/en/rar/account-billing/payments-invoices">Billing</a>
-    <a href="/en/rar/account-billing/account-access">Account</a>
-    <a href="/en/rar/contact-support">Support</a>
-  </nav>
-
-  <section className="brand-home__search-panel" aria-labelledby="popular-title">
-    <div className="brand-home__section-heading">
-      <p className="brand-home__section-kicker">Fast paths</p>
-      <h2 id="popular-title">Popular help</h2>
-    </div>
-    <div className="brand-home__quick-grid">
-      <a className="brand-home__quick-card" href="/en/rar/orders-rentals/manage-rental">
-        <span className="brand-home__quick-icon">01</span>
-        <span>
-          <strong>Manage your rental</strong>
-          <small>Change dates, view order status, and manage active rentals.</small>
-        </span>
+  <section className="rar-products-section" aria-labelledby="rar-products-title">
+    <h2 id="rar-products-title">Products</h2>
+    <div className="rar-products-row">
+      <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/manage-rental">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png/v1/fill/w_1024,h_768,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png)'}} />
+        <strong>Rentals</strong>
+        <small>Orders and items</small>
       </a>
-      <a className="brand-home__quick-card" href="/en/rar/orders-rentals/delivery">
-        <span className="brand-home__quick-icon">02</span>
-        <span>
-          <strong>Delivery help</strong>
-          <small>Track a delivery, prepare for arrival, and solve delivery issues.</small>
-        </span>
+      <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/delivery">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_d19515e6d1bf48169fad63e2f59dc57c~mv2.png/v1/fill/w_1168,h_876,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_d19515e6d1bf48169fad63e2f59dc57c~mv2.png)'}} />
+        <strong>Delivery</strong>
+        <small>Setup and arrival</small>
       </a>
-      <a className="brand-home__quick-card" href="/en/rar/orders-rentals/returns">
-        <span className="brand-home__quick-icon">03</span>
-        <span>
-          <strong>Returns and pickup</strong>
-          <small>Schedule pickup, return items, and understand return timing.</small>
-        </span>
+      <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/returns">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_3f2c7758ec9443f78e7b1008b7803921~mv2.png/v1/fill/w_1168,h_876,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_3f2c7758ec9443f78e7b1008b7803921~mv2.png)'}} />
+        <strong>Returns</strong>
+        <small>Pickup and timing</small>
       </a>
-      <a className="brand-home__quick-card" href="/en/rar/account-billing/payments-invoices">
-        <span className="brand-home__quick-icon">04</span>
-        <span>
-          <strong>Payments and invoices</strong>
-          <small>Review payment methods, invoices, charges, and receipts.</small>
-        </span>
+      <a className="rar-product-tile rar-product-tile--app" href="/en/rar/overview">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}} />
+        <strong>RAR OS</strong>
+        <small>Platform help</small>
+      </a>
+      <a className="rar-product-tile rar-product-tile--app" href="/en/rar/account-billing/account-access">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}} />
+        <strong>MyRAR</strong>
+        <small>Account access</small>
+      </a>
+      <a className="rar-product-tile rar-product-tile--app" href="/en/rar/account-billing/payments-invoices">
+        <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}} />
+        <strong>Billing</strong>
+        <small>Payments and invoices</small>
       </a>
     </div>
-  </section>
-
-  <section className="brand-home__collections" aria-labelledby="collections-title">
-    <div className="brand-home__section-heading">
-      <p className="brand-home__section-kicker">Browse</p>
-      <h2 id="collections-title">Help collections</h2>
-    </div>
-    <div className="brand-home__collection-grid">
-      <a className="brand-home__collection" href="/en/rar/overview">
-        <span className="brand-home__collection-mark">RAR</span>
-        <strong>Start with RAR</strong>
-        <small>General help center overview and routing notes.</small>
-      </a>
-      <a className="brand-home__collection" href="/en/rar/orders-rentals/manage-rental">
-        <span className="brand-home__collection-mark">Rentals</span>
-        <strong>Orders and rentals</strong>
-        <small>Rental management, delivery help, returns, and pickup.</small>
-      </a>
-      <a className="brand-home__collection" href="/en/rar/account-billing/account-access">
-        <span className="brand-home__collection-mark">Account</span>
-        <strong>Account and billing</strong>
-        <small>Sign-in help, payment methods, invoices, and receipts.</small>
-      </a>
-      <a className="brand-home__collection" href="/en/rar/support-operations/escalations">
-        <span className="brand-home__collection-mark">Ops</span>
-        <strong>Support operations</strong>
-        <small>Escalations, handoffs, and internal support flows.</small>
-      </a>
-    </div>
-  </section>
-
-  <section className="brand-home__handoff" aria-labelledby="handoff-title">
-    <div>
-      <p className="brand-home__section-kicker">Still stuck?</p>
-      <h2 id="handoff-title">Get help from RAR support</h2>
-      <p>Send us the rental ID, account email, and a short description so the support team can route your request quickly.</p>
-    </div>
-    <a className="brand-home__primary" href="/en/rar/contact-support">Contact RAR support</a>
   </section>
 </div>
