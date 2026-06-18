@@ -1,0 +1,82 @@
+/* Late override: match the custom RAR home search trigger to Mintlify's native docs search. */
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-trigger {
+  display: flex !important;
+  width: min(100%, 520px) !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  margin-top: 22px !important;
+  border: 0 solid #f1f0f5 !important;
+  border-radius: 12px !important;
+  padding: 0 12px 0 14px !important;
+  color: #737277 !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 1px rgba(162, 160, 165, 0.3) !important;
+  cursor: pointer !important;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-trigger,
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-trigger * {
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-trigger:hover {
+  color: #5f5e63 !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 1px rgba(95, 94, 99, 0.3) !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-left {
+  display: inline-flex !important;
+  min-width: 0 !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-icon {
+  display: inline-flex !important;
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: currentColor !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-icon svg {
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-copy {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  color: currentColor !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home .brand-home__search-trigger kbd {
+  flex: 0 0 auto !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #737277 !important;
+  background: transparent !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important;
+}
