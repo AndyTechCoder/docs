@@ -9,17 +9,17 @@ description: "Start here for RAR rentals, orders, account help, billing, and sup
       <div className="brand-home__eyebrow">RAR Help Center</div>
       <h1 id="rar-home-title">How can we help?</h1>
       <p className="brand-home__lead">Find support for rentals, delivery, returns, billing, account access, and pickup.</p>
-      <button className="brand-home__search-trigger" type="button" aria-label="Open Mintlify search" onClick={() => (document.getElementById('search-bar-entry') || document.getElementById('search-bar-entry-mobile'))?.click()}>
-        <span className="brand-home__search-left">
-          <span className="brand-home__search-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button className="brand-home__search-trigger" type="button" aria-label="Open Mintlify search" onClick={() => (document.getElementById('search-bar-entry') || document.getElementById('search-bar-entry-mobile'))?.click()} style={{display:'flex',width:'min(100%, 520px)',height:'36px',minHeight:'36px',alignItems:'center',justifyContent:'space-between',gap:'8px',marginTop:'22px',border:'0 solid #f1f0f5',borderRadius:'12px',padding:'0 12px 0 14px',color:'#737277',background:'#fff',boxShadow:'0 0 0 1px rgba(162, 160, 165, 0.3)',cursor:'pointer',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'14px',fontWeight:400,lineHeight:'24px'}}>
+        <span className="brand-home__search-left" style={{display:'inline-flex',minWidth:0,alignItems:'center',gap:'8px',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif'}}>
+          <span className="brand-home__search-icon" aria-hidden="true" style={{display:'inline-flex',width:'16px',height:'16px',flex:'0 0 auto',alignItems:'center',justifyContent:'center',color:'currentColor'}}>
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{display:'block',width:'16px',height:'16px'}}>
               <path d="M9.25 15.5C12.7018 15.5 15.5 12.7018 15.5 9.25C15.5 5.79822 12.7018 3 9.25 3C5.79822 3 3 5.79822 3 9.25C3 12.7018 5.79822 15.5 9.25 15.5Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M13.75 13.75L17 17" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
-          <span className="brand-home__search-copy">Search...</span>
+          <span className="brand-home__search-copy" style={{flex:'1 1 auto',minWidth:0,overflow:'hidden',color:'currentColor',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'14px',fontWeight:400,lineHeight:'24px',textAlign:'left',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>Search...</span>
         </span>
-        <kbd>⌘K</kbd>
+        <kbd style={{flex:'0 0 auto',border:0,borderRadius:0,padding:0,color:'#737277',background:'transparent',fontFamily:'Inter, -apple-system, system-ui, Segoe UI, sans-serif',fontSize:'12px',fontWeight:500,lineHeight:'16px'}}>⌘K</kbd>
       </button>
       <div className="brand-home__actions" aria-label="Primary help paths">
         <a className="brand-home__primary" href="/en/rar/orders-rentals/manage-rental">Manage a rental</a>
