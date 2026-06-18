@@ -21,12 +21,11 @@
 .nav-dropdown-products-selector-trigger::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: var(--brand-switcher-trigger-inset);
   left: var(--brand-switcher-trigger-inset);
   width: var(--brand-switcher-trigger-logo);
   height: var(--brand-switcher-trigger-logo);
   border-radius: 0.55rem;
-  transform: translateY(-50%);
   background-image: var(--brand-logo-rar);
   background-position: center;
   background-repeat: no-repeat;
