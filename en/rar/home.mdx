@@ -4,21 +4,34 @@ description: "Start here for RAR rentals, orders, account help, billing, and sup
 ---
 
 <div className="brand-home brand-home--rar">
+  <header className="brand-home__site-header" aria-label="RAR help navigation">
+    <a className="brand-home__logo-link" href="/en/rar/home" aria-label="RAR Help Center home">
+      <img src="https://static.wixstatic.com/media/8e4fea_e8fbd1c6223041448ebe7539cb181808~mv2.png/v1/fill/w_226,h_226,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/RAR%20is%20now%20part%20of%20Smartrobotix%20Group%20no%20bg%20hd.png" alt="RAR" />
+    </a>
+    <div className="brand-home__language-chip" aria-label="Current language">EN</div>
+    <nav className="brand-home__top-links" aria-label="RAR help sections">
+      <a href="/en/rar/home" aria-current="page">Home</a>
+      <a href="/en/rar/orders-rentals/manage-rental">Rent</a>
+      <a href="/en/rar/orders-rentals/delivery">Delivery</a>
+      <a href="/en/rar/account-billing/payments-invoices">Billing</a>
+      <a href="/en/rar/contact-support">Support</a>
+    </nav>
+  </header>
+
   <section className="brand-home__hero brand-home__hero--rar" aria-labelledby="rar-home-title">
     <div className="brand-home__copy">
-      <div className="brand-home__eyebrow">RAR Help Center</div>
-      <h1 id="rar-home-title">How can we help?</h1>
-      <p className="brand-home__lead">Find support for rentals, delivery, returns, billing, account access, and pickup.</p>
+      <div className="brand-home__eyebrow"><span>New & Now Available on RAR</span></div>
+      <h1 id="rar-home-title">Discover help for every RAR rental</h1>
+      <p className="brand-home__lead">Find quick answers for rentals, delivery, returns, invoices, account access, and support requests.</p>
       <div className="brand-home__actions" aria-label="Primary help paths">
         <a className="brand-home__primary" href="/en/rar/orders-rentals/manage-rental">Manage a rental</a>
-        <a className="brand-home__secondary" href="/en/rar/contact-support">Contact support</a>
+        <a className="brand-home__secondary" href="/en/rar/contact-support">Explore support</a>
       </div>
     </div>
-    <div className="brand-home__assist-card" aria-label="RAR support status">
-      <span>Need the fastest route?</span>
-      <strong>Start with your rental ID or account email.</strong>
-      <small>That helps RAR support find the order, delivery, or invoice faster.</small>
-    </div>
+    <figure className="brand-home__hero-media" aria-label="RAR product support">
+      <img src="https://static.wixstatic.com/media/8e4fea_edd6db1e88334a70a03b70ac02b71943f000.jpg/v1/fill/w_1248,h_625,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/8e4fea_edd6db1e88334a70a03b70ac02b71943f000.jpg" alt="RAR product" />
+      <figcaption>RAR Help Center</figcaption>
+    </figure>
   </section>
 
   <nav className="brand-home__topic-strip" aria-label="Popular RAR help categories">
