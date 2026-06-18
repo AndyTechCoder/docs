@@ -1,0 +1,24 @@
+/* Make the RAR brand landing page behave like a custom start screen inside Mintlify. */
+html[data-current-path="/en/rar/home"] #header,
+html[data-current-path="/en/rar/home"] #content-side-layout {
+  display: none !important;
+}
+
+html[data-current-path="/en/rar/home"] #content-area {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+html[data-current-path="/en/rar/home"] #content {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  max-width: none !important;
+}
+
+html[data-current-path="/en/rar/home"] #content-container {
+  padding-top: clamp(1.5rem, 4vw, 3rem) !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home {
+  margin-top: 0 !important;
+}
