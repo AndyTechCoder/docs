@@ -1,5 +1,11 @@
-/* Follow-up override for the Mintlify product selector trigger. */
+/* Follow-up overrides for the Mintlify navigation chrome. */
 .nav-dropdown-products-selector-trigger::before {
   top: var(--brand-switcher-trigger-inset) !important;
   transform: none !important;
+}
+
+.nav-logo {
+  height: 1.75rem !important;
+  max-width: 12rem !important;
+  object-fit: contain !important;
 }
