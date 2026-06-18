@@ -28,6 +28,7 @@
               {
                 "group": "RAR help",
                 "pages": [
+                  "en/rar/home",
                   "en/rar/overview",
                   "en/rar/contact-support"
                 ]
