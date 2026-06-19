@@ -311,3 +311,61 @@ html[data-current-path="/en/rar/home"] .rar-product-tile small {
     font-size: clamp(4.4rem, 21vw, 6.5rem) !important;
   }
 }
+
+/* RAR support home final polish. Kept last in the file so it wins over Mintlify defaults. */
+html[data-current-path="/en/rar/home"] #content-container {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+html[data-current-path="/en/rar/home"] .brand-home {
+  padding-inline: 0 !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile {
+  display: block;
+  min-height: 148px;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile__media {
+  display: block;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile__title {
+  display: block;
+  color: #1f1f1f;
+  font-family: var(--rar-agrandir-bold) !important;
+  font-size: .94rem;
+  line-height: 1.1;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile__meta {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font-family: var(--rar-agrandir-light) !important;
+  font-size: .8rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 860px) {
+  html[data-current-path="/en/rar/home"] #content-container {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-products-row {
+    gap: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-product-tile {
+    flex-basis: 124px;
+  }
+}
