@@ -31,38 +31,32 @@ description: "Search RAR support and browse RAR products and apps."
   </section>
 
   <section className="rar-products-section" aria-labelledby="rar-products-title" style={{textAlign:'center'}}>
-    <h2 id="rar-products-title" style={{textAlign:'center'}}>Products</h2>
+    <h2 id="rar-products-title" style={{textAlign:'center',fontFamily:'var(--rar-agrandir-bold)',fontWeight:700,letterSpacing:0}}>Products</h2>
     <input className="rar-products-toggle" id="rar-products-toggle" type="checkbox" aria-label="Show all products" style={{display:'none'}} />
     <div className="rar-products-row" style={{display:'flex',flexWrap:'wrap',justifyContent:'center',alignItems:'flex-start',gap:'18px 12px',overflow:'visible',padding:'8px 0 0',scrollSnapType:'none'}}>
       <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/manage-rental" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png/v1/fill/w_1024,h_768,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png)'}}></span>
         <span className="rar-product-tile__title">Rentals</span>
-        <span className="rar-product-tile__meta">Orders and items</span>
       </a>
       <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/delivery" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_d19515e6d1bf48169fad63e2f59dc57c~mv2.png/v1/fill/w_1168,h_876,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_d19515e6d1bf48169fad63e2f59dc57c~mv2.png)'}}></span>
         <span className="rar-product-tile__title">Delivery</span>
-        <span className="rar-product-tile__meta">Setup and arrival</span>
       </a>
       <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/returns" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_3f2c7758ec9443f78e7b1008b7803921~mv2.png/v1/fill/w_1168,h_876,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_3f2c7758ec9443f78e7b1008b7803921~mv2.png)'}}></span>
         <span className="rar-product-tile__title">Returns</span>
-        <span className="rar-product-tile__meta">Pickup and timing</span>
       </a>
       <a className="rar-product-tile rar-product-tile--app" href="/en/rar/overview" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}}></span>
         <span className="rar-product-tile__title">RAR OS</span>
-        <span className="rar-product-tile__meta">Platform help</span>
       </a>
       <a className="rar-product-tile rar-product-tile--app" href="/en/rar/account-billing/account-access" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}}></span>
         <span className="rar-product-tile__title">MyRAR</span>
-        <span className="rar-product-tile__meta">Account access</span>
       </a>
       <a className="rar-product-tile rar-product-tile--app" href="/en/rar/account-billing/payments-invoices" style={{flex:'0 1 118px',textDecoration:'none',borderBottom:0,boxShadow:'none',backgroundImage:'none'}}>
         <span className="rar-product-tile__media" style={{backgroundImage:'url(/assets/brand-logos/rar.svg)'}}></span>
         <span className="rar-product-tile__title">Billing</span>
-        <span className="rar-product-tile__meta">Payments and invoices</span>
       </a>
     </div>
     <label className="rar-products-show-more" htmlFor="rar-products-toggle" style={{display:'none'}}>
