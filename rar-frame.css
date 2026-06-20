@@ -80,10 +80,87 @@ html[data-current-path="/en/rar/home"] #navbar {
 
 @media (max-width: 1023px) {
   html[data-current-path="/en/rar/home"] #content-container {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
-    margin-top: 3.5rem !important;
+    margin-top: 7rem !important;
+    padding: 12px 10px 30px !important;
     overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] #content-area,
+  html[data-current-path="/en/rar/home"] #content,
+  html[data-current-path="/en/rar/home"] .brand-home,
+  html[data-current-path="/en/rar/home"] .rar-products-section {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-width: 0 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    gap: 22px !important;
+    border-radius: 28px !important;
+    padding: 28px 18px 22px !important;
+    overflow: hidden !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero h1 {
+    max-width: 100% !important;
+    font-size: clamp(3rem, 14vw, 4.45rem) !important;
+    line-height: .94 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__media,
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    gap: 8px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge {
+    width: auto !important;
+    flex: 0 0 24% !important;
+    height: clamp(108px, 28vw, 142px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
+    width: auto !important;
+    flex: 0 0 58% !important;
+    height: clamp(132px, 34vw, 172px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-products-section {
+    margin-top: 34px !important;
+    padding: 0 4px 28px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-products-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 18px 16px !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-product-tile {
+    flex: 0 1 calc(33.333% - 12px) !important;
+    min-width: 0 !important;
   }
 }
 
