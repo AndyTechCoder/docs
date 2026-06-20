@@ -558,3 +558,25 @@ html[data-current-path="/en/rar/home"] .rar-product-tile__media {
     height: 92px !important;
   }
 }
+
+/* RAR hero side-image clipping: the rounded hero owns the clipping mask. */
+html[data-current-path="/en/rar/home"] .rar-support-hero {
+  overflow: hidden !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-support-hero__media,
+html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-support-hero__media {
+  flex: 0 1 100% !important;
+  justify-self: stretch !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+  flex: 0 1 100% !important;
+}
