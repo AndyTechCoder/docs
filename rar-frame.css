@@ -1,0 +1,61 @@
+/* RAR home should complement the Mintlify frame instead of replacing it. */
+@media (min-width: 1024px) {
+  html[data-current-path="/en/rar/home"] #content-container {
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 16.5rem !important;
+    padding: clamp(22px, 3vw, 34px) clamp(24px, 4vw, 48px) !important;
+    overflow: auto !important;
+    border: 1px solid var(--gray-a5, rgba(0, 0, 0, 0.08)) !important;
+    border-radius: 16px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] #content-area,
+  html[data-current-path="/en/rar/home"] #content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .brand-home,
+  html[data-current-path="/en/rar/home"] .rar-products-section {
+    width: 100% !important;
+    max-width: 980px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero {
+    width: 100% !important;
+    min-height: clamp(420px, 44vw, 520px) !important;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 390px) !important;
+    padding: clamp(34px, 4vw, 54px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero h1 span {
+    font-size: clamp(2.7rem, 5vw, 4.35rem) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-products-row {
+    overflow: visible !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  html[data-current-path="/en/rar/home"] .rar-support-hero {
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    flex-direction: row !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge {
+    width: 24% !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
+    width: min(48%, 380px) !important;
+  }
+}
