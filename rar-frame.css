@@ -27,7 +27,9 @@ html[data-current-path="/en/rar/home"] #navbar {
     box-sizing: border-box !important;
     width: calc(100vw - 16.5rem) !important;
     max-width: calc(100vw - 16.5rem) !important;
+    height: calc(100dvh - 3.5rem - 8px) !important;
     min-width: 0 !important;
+    min-height: 0 !important;
     margin-top: 0 !important;
     margin-left: 16.5rem !important;
     margin-right: 0 !important;
@@ -78,7 +80,10 @@ html[data-current-path="/en/rar/home"] #navbar {
 
 @media (max-width: 1023px) {
   html[data-current-path="/en/rar/home"] #content-container {
+    height: auto !important;
+    min-height: 0 !important;
     margin-top: 3.5rem !important;
+    overflow: visible !important;
   }
 }
 
