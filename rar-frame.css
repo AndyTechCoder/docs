@@ -385,3 +385,50 @@ html[data-current-path="/en/rar/home"] .rar-product-tile__media {
     flex-basis: calc(50% - 12px) !important;
   }
 }
+
+/* Desktop hero media: side images are wider and clipped vertically by the hero card. */
+@media (min-width: 1181px) {
+  html[data-current-path="/en/rar/home"] .rar-support-hero__media {
+    align-self: stretch !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    height: calc(100% + 64px) !important;
+    margin-top: -32px !important;
+    margin-bottom: -32px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+    overflow: visible !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge {
+    width: 86% !important;
+    height: clamp(112px, 8.4vw, 150px) !important;
+    flex: 0 0 auto !important;
+    border-radius: 28px !important;
+    background-size: cover !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:first-child {
+    transform: translateY(-26px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
+    width: 100% !important;
+    height: clamp(150px, 12vw, 190px) !important;
+    flex: 0 0 auto !important;
+    border-radius: 30px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:last-child {
+    transform: translateY(26px) !important;
+  }
+}
