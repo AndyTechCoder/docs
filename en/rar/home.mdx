@@ -32,6 +32,7 @@ description: "Search RAR support and browse RAR products and apps."
 
   <section className="rar-products-section" aria-labelledby="rar-products-title">
     <h2 id="rar-products-title">Products</h2>
+    <input className="rar-products-toggle" id="rar-products-toggle" type="checkbox" aria-label="Show all products" />
     <div className="rar-products-row">
       <a className="rar-product-tile rar-product-tile--product" href="/en/rar/orders-rentals/manage-rental">
         <span className="rar-product-tile__media" style={{backgroundImage:'url(https://static.wixstatic.com/media/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png/v1/fill/w_1024,h_768,fp_0.50_0.50,q_95,enc_avif,quality_auto/8e4fea_e213439407ee4a69bfbe035dfa8599b4~mv2.png)'}}></span>
@@ -64,5 +65,9 @@ description: "Search RAR support and browse RAR products and apps."
         <span className="rar-product-tile__meta">Payments and invoices</span>
       </a>
     </div>
+    <label className="rar-products-show-more" htmlFor="rar-products-toggle">
+      <span className="rar-products-show-more__more">Show more</span>
+      <span className="rar-products-show-more__less">Show less</span>
+    </label>
   </section>
 </div>
