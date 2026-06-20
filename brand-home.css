@@ -580,3 +580,42 @@ html[data-current-path="/en/rar/home"] .rar-support-hero__media {
 html[data-current-path="/en/rar/home"] .rar-support-hero__images {
   flex: 0 1 100% !important;
 }
+
+@media (min-width: 861px) {
+  html[data-current-path="/en/rar/home"] .rar-support-hero__media {
+    overflow: visible !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    width: min(100%, 470px) !important;
+    max-width: 470px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    overflow: visible !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge {
+    width: 62% !important;
+    height: clamp(92px, 8vw, 118px) !important;
+    flex: 0 0 auto !important;
+    border-radius: 26px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:first-child {
+    order: 1 !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
+    order: 2 !important;
+    width: 100% !important;
+    height: clamp(150px, 13vw, 190px) !important;
+    flex: 0 0 auto !important;
+    border-radius: 30px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:last-child {
+    order: 3 !important;
+  }
+}
