@@ -3,6 +3,108 @@ title: "RAR Support"
 description: "Search RAR support and browse RAR products and apps."
 ---
 
+<style>{`
+html[data-current-path="/en/rar/home"] .rar-products-section {
+  text-align: center !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-section h2 {
+  text-align: center !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-toggle {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: clamp(20px, 3vw, 34px) !important;
+  overflow: visible !important;
+  padding: 8px 0 0 !important;
+  scroll-snap-type: none !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile,
+html[data-current-path="/en/rar/home"] .rar-product-tile:hover,
+html[data-current-path="/en/rar/home"] .rar-product-tile:focus,
+html[data-current-path="/en/rar/home"] .rar-product-tile * {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile {
+  flex: 0 1 136px !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-product-tile:nth-of-type(n+13) {
+  display: none !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-toggle:checked ~ .rar-products-row .rar-product-tile {
+  display: block !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-show-more {
+  display: none;
+  width: max-content;
+  margin: 22px auto 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: #1f1f1f;
+  background: #efefeb;
+  cursor: pointer;
+  font-family: var(--rar-agrandir-bold) !important;
+  font-size: .92rem;
+  line-height: 1;
+  text-decoration: none !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-section:has(.rar-product-tile:nth-of-type(13)) .rar-products-show-more {
+  display: inline-flex !important;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-show-more__less {
+  display: none;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-toggle:checked ~ .rar-products-show-more .rar-products-show-more__more {
+  display: none;
+}
+
+html[data-current-path="/en/rar/home"] .rar-products-toggle:checked ~ .rar-products-show-more .rar-products-show-more__less {
+  display: inline;
+}
+
+@media (max-width: 860px) {
+  html[data-current-path="/en/rar/home"] .rar-products-row {
+    gap: 18px 12px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-product-tile {
+    flex: 0 1 calc(25% - 12px) !important;
+    min-width: 106px !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-product-tile:nth-of-type(n+9) {
+    display: none !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-products-section:has(.rar-product-tile:nth-of-type(9)) .rar-products-show-more {
+    display: inline-flex !important;
+  }
+}
+`}</style>
+
 <div className="brand-home brand-home--rar">
   <section className="rar-support-hero" aria-labelledby="rar-home-title">
     <div className="rar-support-hero__content">
