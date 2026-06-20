@@ -1,36 +1,50 @@
 /* RAR home should complement the Mintlify frame instead of replacing it. */
 @media (min-width: 1024px) {
   html[data-current-path="/en/rar/home"] #content-container {
-    width: auto !important;
-    max-width: none !important;
+    box-sizing: border-box !important;
+    width: calc(100vw - 16.5rem) !important;
+    max-width: calc(100vw - 16.5rem) !important;
+    min-width: 0 !important;
     margin-left: 16.5rem !important;
+    margin-right: 0 !important;
     padding: clamp(22px, 3vw, 34px) clamp(24px, 4vw, 48px) !important;
-    overflow: auto !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
     border: 1px solid var(--gray-a5, rgba(0, 0, 0, 0.08)) !important;
     border-radius: 16px !important;
   }
 
   html[data-current-path="/en/rar/home"] #content-area,
   html[data-current-path="/en/rar/home"] #content {
+    box-sizing: border-box !important;
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: min(100%, 980px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-width: 0 !important;
   }
 
   html[data-current-path="/en/rar/home"] .brand-home,
   html[data-current-path="/en/rar/home"] .rar-products-section {
+    box-sizing: border-box !important;
     width: 100% !important;
     max-width: 980px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-width: 0 !important;
   }
 
   html[data-current-path="/en/rar/home"] .rar-support-hero {
+    box-sizing: border-box !important;
     width: 100% !important;
+    max-width: 100% !important;
     min-height: clamp(420px, 44vw, 520px) !important;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 390px) !important;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 360px) !important;
     padding: clamp(34px, 4vw, 54px) !important;
   }
 
   html[data-current-path="/en/rar/home"] .rar-support-hero h1 span {
-    font-size: clamp(2.7rem, 5vw, 4.35rem) !important;
+    font-size: clamp(2.55rem, 4.6vw, 4.1rem) !important;
   }
 
   html[data-current-path="/en/rar/home"] .rar-products-row {
@@ -39,6 +53,11 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1180px) {
+  html[data-current-path="/en/rar/home"] #content-container {
+    padding-left: clamp(18px, 3vw, 34px) !important;
+    padding-right: clamp(18px, 3vw, 34px) !important;
+  }
+
   html[data-current-path="/en/rar/home"] .rar-support-hero {
     grid-template-columns: 1fr !important;
     min-height: 0 !important;
