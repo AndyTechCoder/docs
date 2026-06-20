@@ -454,7 +454,7 @@ html[data-current-path="/en/rar/home"] .rar-product-tile__media {
   }
 
   html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
-    height: clamp(178px, 14vw, 230px) !important;
+    height: clamp(200px, 16vw, 280px) !important;
   }
 
   html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:last-child {
