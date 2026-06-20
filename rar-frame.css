@@ -461,3 +461,22 @@ html[data-current-path="/en/rar/home"] .rar-product-tile__media {
     transform: translateY(clamp(38px, 4.5vw, 70px)) !important;
   }
 }
+
+/* Desktop media final placement. */
+@media (min-width: 1181px) {
+  html[data-current-path="/en/rar/home"] .rar-support-hero__images {
+    transform: translateY(16px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:first-child {
+    transform: translateY(calc(clamp(24px, 3.2vw, 52px) * -1)) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-main {
+    height: clamp(230px, 18vw, 320px) !important;
+  }
+
+  html[data-current-path="/en/rar/home"] .rar-support-hero__image-edge:last-child {
+    transform: translateY(clamp(44px, 5vw, 82px)) !important;
+  }
+}
